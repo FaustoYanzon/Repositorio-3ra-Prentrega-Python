@@ -1,0 +1,18 @@
+{% extends 'padre.html' %} 
+
+{% load static %}
+
+{% block contenido %}
+<main>
+    <h1 class="text-center">Bienvenido a la Pestaña de Cursos</h1>
+    <nav>
+        <div class="container">
+        <a class="btn btn-primary" href="{% url 'ver_cursos' %}">Ver Cursos</a>
+        <a class="btn btn-primary" href="{% url 'alta_curso' %}">Cargar Cursos</a>
+        <a class="btn btn-primary" href="{% url 'buscar_curso' %}">Buscar Cursos</a>
+        </div>
+    </nav>
+</main>
+
+{% endblock %}
+

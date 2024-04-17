@@ -1,0 +1,38 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenido %}
+<main>
+    <h1 class="text-center">Bienvenido a la Pestaña de Alumnos</h1>
+    <nav>
+        <div class="container">
+        <a class="btn btn-primary" href="{% url 'ver_alumnos' %}">Ver Alumnos</a>
+        <a class="btn btn-primary" href="{% url 'alta_alumno' %}">Cargar Alumnos</a>
+        <a class="btn btn-primary" href="{% url 'buscar_alumno' %}">Buscar Alumnos</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <img src="{% static 'AppCoder/assets/img/testimonials-1.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Mariana Basualdo</h5>
+                        <p class="card-text">Muy buen curso</p>
+                        <a class="btn btn-danger" href="">Enviar Mensaje</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <img src="{% static 'AppCoder/assets/img/testimonials-2.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcos Moneta</h5>
+                        <p class="card-text">Muy divertido</p>
+                        <a class="btn btn-danger" href="">Enviar Mensaje</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

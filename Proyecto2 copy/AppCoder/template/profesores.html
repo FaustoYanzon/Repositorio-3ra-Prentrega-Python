@@ -1,0 +1,17 @@
+{% extends 'padre.html' %} 
+
+{% load static %}
+
+{% block contenido %}
+<main>
+    <h1 class="text-center">Bienvenido a la Pestaña de Profesores</h1>
+    <nav>
+        <div class="container">
+        <a class="btn btn-primary" href="{% url 'ver_profesores' %}">Ver Profesores</a>
+        <a class="btn btn-primary" href="{% url 'alta_profesor' %}">Cargar Profesores</a>
+        <a class="btn btn-primary" href="{% url 'buscar_curso' %}">Buscar Profesores</a>
+        </div>
+    </nav>
+</main>
+
+{% endblock %}
